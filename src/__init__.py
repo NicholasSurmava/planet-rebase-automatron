@@ -33,7 +33,7 @@ def create_app(test_config=None):
             "heartbeat": "badum badum badum"
         })
 
-    from .api import api
+    from .api.v1 import api
     from .frontend import fe
 
     app.register_blueprint(api)
