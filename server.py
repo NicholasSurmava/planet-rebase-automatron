@@ -1,4 +1,7 @@
 from src import create_app
 
+app = create_app()
+
 if __name__ == '__main__':
-    create_app().run(debug=True)
+    app.logger.info('Dev server started...')
+    app.run(debug=True)
